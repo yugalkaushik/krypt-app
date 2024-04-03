@@ -12,7 +12,6 @@ const NavbarItem = ({ title, classProps }) => {
     );
 }
 
-
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     return (
