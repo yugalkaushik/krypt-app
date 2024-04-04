@@ -11,7 +11,6 @@ const NavbarItem = ({ title, classProps }) => {
         </li>
     );
 }
-
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     return (
@@ -38,6 +37,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 )}
+                
             </div>
         </nav>
     );
