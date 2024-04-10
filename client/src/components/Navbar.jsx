@@ -22,6 +22,7 @@ const Navbar = () => {
                 {["Market", "Example", "Tutorial", "Wallets"].map((item, index) => (
                     <NavbarItem key={item + index} title={item} />
                 ))}
+
                 <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>Login</li>
             </ul>
             
@@ -31,6 +32,7 @@ const Navbar = () => {
                 ) : (
                     <HiMenuAlt4  fontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu(true)} />
                 )}
+                
                 {toggleMenu && (
                     <ul className="absolute top-12 right-0 bg-white text-black p-4 rounded-md shadow-md">
                         <li className='text-xl w-full my-2'>
